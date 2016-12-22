@@ -20,7 +20,7 @@ function jdownloader(options) {
         if (uris.length > 0) {
             let form = { urls: uris.join('\n'), source };
             if (fnames.length > 0)
-                form.fnames = fnames.join('n');
+                form.fnames = fnames.join('\n');
             if (options.package)
                 form.package = options.package;
             return new Promise((resolve, reject) => {

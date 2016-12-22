@@ -36,7 +36,7 @@ export async function jdownloader(options: IJDownloaderOptions) {
 
     if (uris.length > 0) {
         let form: IJDownloaderForm = { urls: uris.join('\n'), source };
-        if (fnames.length > 0) form.fnames = fnames.join('n');
+        if (fnames.length > 0) form.fnames = fnames.join('\n');
         if (options.package) form.package = options.package;
 
         return new Promise<number>((resolve, reject) => {
