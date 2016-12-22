@@ -39,5 +39,4 @@ function jdownloader(options) {
         }
     });
 }
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = jdownloader;
+exports.jdownloader = jdownloader;

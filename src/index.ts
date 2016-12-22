@@ -11,12 +11,17 @@ interface IJDownloaderForm {
     package?: string;
 }
 
+export interface IJDownloaderFile {
+    uri: string;
+    out: string;
+}
+
 export interface IJDownloaderOptions {
-    files: string[] | { uri: string; out: string }[];
+    files: string[] | IJDownloaderFile[];
     package?: string;
 }
 
-export default async function jdownloader(options: IJDownloaderOptions) {
+export async function jdownloader(options: IJDownloaderOptions) {
     const uris: string[] = [];
     const fnames: string[] = [];
 

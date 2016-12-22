@@ -1,8 +1,9 @@
+export interface IJDownloaderFile {
+    uri: string;
+    out: string;
+}
 export interface IJDownloaderOptions {
-    files: string[] | {
-        uri: string;
-        out: string;
-    }[];
+    files: string[] | IJDownloaderFile[];
     package?: string;
 }
-export default function jdownloader(options: IJDownloaderOptions): Promise<number>;
+export declare function jdownloader(options: IJDownloaderOptions): Promise<number>;
