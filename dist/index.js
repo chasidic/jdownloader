@@ -17,7 +17,7 @@ function jdownloader(options) {
                 fnames.push(o.out);
             }
         }
-        if (uris.length === 0) {
+        if (uris.length > 0) {
             let form = { urls: uris.join('\n'), source };
             if (fnames.length > 0)
                 form.fnames = fnames.join('n');
