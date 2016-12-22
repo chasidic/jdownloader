@@ -1,0 +1,31 @@
+{
+  "name": "@chasidic/jdownloader",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chasidic/jdownloader.git"
+  },
+  "scripts": {
+    "build": "tsc -p src/",
+    "clean": "rm -rf dist/",
+    "deploy": "git pull --rebase origin master && git push origin master",
+    "major": "npm version major && npm publish",
+    "minor": "npm version minor && npm publish",
+    "patch": "npm version patch && npm publish",
+    "postpublish": "git push origin master --follow-tags",
+    "prepublish": "npm run build -s",
+    "tsc:watch": "npm run build -- --watch"
+  },
+  "author": "Ilan Frumer <ilanfrumer@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "latest",
+    "tslib": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  }
+}
