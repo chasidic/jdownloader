@@ -23,8 +23,8 @@
   "license": "MIT",
   "dependencies": {
     "@types/node": "latest",
-    "@types/request": "^0.0.36",
-    "request": "^2.79.0",
+    "@types/request": "^0.0.42",
+    "request": "^2.81.0",
     "tslib": "latest"
   },
   "devDependencies": {
