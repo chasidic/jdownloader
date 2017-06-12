@@ -16,14 +16,14 @@
     "minor": "npm version minor && npm publish",
     "patch": "npm version patch && npm publish",
     "postpublish": "git push origin master --follow-tags",
-    "prepublish": "npm run build -s",
+    "prepublishOnly": "npm run build -s",
     "tsc:watch": "npm run build -- --watch"
   },
   "author": "Ilan Frumer <ilanfrumer@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@types/node": "latest",
-    "@types/request": "^0.0.42",
+    "@types/request": "^0.0.43",
     "request": "^2.81.0",
     "tslib": "latest"
   },
